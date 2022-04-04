@@ -1,0 +1,32 @@
+[
+    {
+        "id": "0",
+        "name": "Wilfrid Laurier University",
+        "lat": 43.4739,
+        "lng": -80.5274
+    },
+    {
+        "id": "1",
+        "name": "197 Albert Street",
+        "lat": 43.472989,
+        "lng": -80.531436
+    },
+    {
+        "id": "2",
+        "name": "6 Bramblebush Close",
+        "lat": 51.206777,
+        "lng": -0.546255
+    },
+    {
+        "id": "3",
+        "name": "22 Little Oakley",
+        "lat": 51.233130,
+        "lng": -0.592020
+    },
+    {
+        "id": "4",
+        "name": "14 GreenLeaf Avenue",
+        "lat": 51.232712,
+        "lng": -0.540188
+    }
+]
