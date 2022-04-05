@@ -6,7 +6,7 @@ An all-in-one map-based web application that allows students in the Waterloo reg
 
 PLACE2LIVE will have 3 main features, a Tenant Search portal, a Room Search portal, and a Roommate Search Portal. Automatically, posts in the Tenant Search portal, Room Search portal, and Roommate Search portal will get a “TenantNeeded”, “RoomNeeded”, “RoommateNeeded” tag, respectively. Users will also tag their own posts, for easy searchability, then those who want to search through the portals have the option to use the tags as filters.
 
-# **Components and Features that have been Implemented:**
+# **Components and Features that have been Implemented:***
 - Login to Account (on backend)
 - Create Account (missing authentication) (on backend)
 - Create Post (basic structure) (on backend)
@@ -22,7 +22,8 @@ PLACE2LIVE will have 3 main features, a Tenant Search portal, a Room Search port
 - Notifications for Attributes the User is Interested in or New Profile Reviews
 - Dealing with Fake Reviews thorugh authentication and reporting posts
 
-_**Unfortunately, we were unable to connect the frontend and backend due to the time constraints, but the frontend and backend features are currently implemented standalone from one another.**_
+
+_***Unfortunately, we were unable to connect the frontend and backend due to the time constraints, but the frontend and backend features are currently implemented standalone from one another.**_
 
 
 # **Dependencies**
