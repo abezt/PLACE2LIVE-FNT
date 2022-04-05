@@ -20,26 +20,58 @@
       <i class='bx bx-menu' id="btn"></i>
     </div>
     <ul class="nav_list">
-      <li>
+      <!-- <li>
           <i class='bx bx-search'></i>
           <input type="text" name="search" placeholder="Search...">
-        <!-- <span class="tooltip">Dashboard</span> -->
-      </li>
+        <span class="tooltip">Dashboard</span>
+      </li> -->
       <!--Home-->
       <li>
         <a href="/">
-          <i class='bx bxs-home-alt-2'></i>
+          <i class='bx bx-home' ></i>
           <span class="links_name">Home</span>
         </a>
-        <!-- <span class="tooltip">Dashboard</span> -->
+        <span class="tooltip">Home</span>
       </li>
-      <!--Messages-->
+      <!--Find Sublets-->
       <li>
-        <a href="messages">
-          <i class='bx bx-grid-alt' ></i>
-          <span class="links_name">Messages</span>
+        <a href="find-sublets">
+          <i class='bx bx-hash'></i>
+          <span class="links_name">Find Sublets</span>
         </a>
-        <!-- <span class="tooltip">Dashboard</span> -->
+        <span class="tooltip">Find Sublets</span>
+      </li>
+      <!--Find Tenants-->
+      <li>
+        <a href="find-tenants">
+          <i class='bx bx-bell' ></i>
+          <span class="links_name">Find Tenants</span>
+        </a>
+        <span class="tooltip">Find Tenants</span>
+      </li>
+      <!--Find Roommates-->
+      <li>
+        <a href="find-roommates">
+          <i class='bx bx-envelope' ></i>
+          <span class="links_name">Find Roommates</span>
+        </a>
+        <span class="tooltip">Find Roommates</span>
+      </li>
+      <!--Bookmarks-->
+      <li>
+        <a href="bookmarks">
+          <i class='bx bx-bookmark' ></i>
+          <span class="links_name">Bookmarks</span>
+        </a>
+        <span class="tooltip">Bookmarks</span>
+      </li>
+      <!--CreateAccount-->
+      <li>
+        <a href="createaccount">
+          <i class='bx bx-user' ></i>
+          <span class="links_name">Create Account</span>
+        </a>
+        <span class="tooltip">Create Account</span>
       </li>
       <!--Map-->
       <li>
@@ -47,17 +79,11 @@
           <i class='bx bx-map-alt' ></i>
           <span class="links_name">Map</span>
         </a>
-        <!-- <span class="tooltip">Dashboard</span> -->
-      </li>
-      <!--CreateAccount-->
-      <li>
-        <a href="createaccount">
-          <i class='bx bx-grid-alt' ></i>
-          <span class="links_name">Create Account</span>
-        </a>
-        <!-- <span class="tooltip">Dashboard</span> -->
+        <span class="tooltip">Map</span>
       </li>    
     </ul>
+    <!--Post Button-->
+    <button type="button" class="postBtn">Post</button>
     <div class="profile_content">
       <div class="profile">
         <div class="profile_details">
@@ -67,9 +93,26 @@
             <div class="school">Wilfrid Laurier University</div>
           </div>
         </div>
+        <i class='bx bx-log-out' id="log_out" ></i>
       </div>
     </div>
   </div>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search")
+
+    sidebar.classList.toggle("active");
+
+    btn.onclick = function() {
+      sidebar.classList.toggle("active");
+    }
+
+    searchBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+    }
+  </script>
 
 <!--- Image Slider -->
 
