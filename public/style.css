@@ -136,19 +136,6 @@ body {
     font-size: 18px;
 }
 
-.sidebar ul li .bx-search{
-    position: absolute;
-    height: 30px;
-    top: 5px;
-    z-index: 99;
-    transition: all 0.5s ease;
-}
-
-.sidebar:active ul li .bx-search:hover{
-    background: rgb(248, 248, 248);
-    color:rgb(0, 0, 0);
-}
-
 .sidebar ul li a{
     color: rgb(0, 0, 0);
     display: flex;
@@ -244,20 +231,33 @@ body {
     font-size: 12px;
 }
 
+.profile #log_out:hover{
+    background: rgb(248, 248, 248);
+}
+
 .profile #log_out{
     position: absolute;
     bottom: 12px;
-    left: 50px;
+    left: 42px;
     transform: translateX(-50%);
     min-width: 50px;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 12px;
+    text-align:center;
     transition: all 0.5s ease;
 }
 
 .sidebar.active .profile #log_out {
-    left: 225px;
+    border-radius: 100px;
+    line-height: 30px;
+    text-align:center;
+    min-width: 30px;
+    font-size: 15px;
+    left: 210px;
+    bottom: 22px;
+    
+    
 }
 
 .home_content{

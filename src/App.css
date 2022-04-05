@@ -48,18 +48,18 @@
   left: 250px;
 }
 
-.mapHeader{
+.pageHeader{
   font-size:17px;
 }
 
-.mapHeader .header{
+.pageHeader .header{
   position:absolute;
   left: 15%;
   top: 15px;
   font-style: italic;
 }
 
-.mapHeader img{
+.pageHeader img{
   position: absolute;
   height: 45px;
   width: 45px;
@@ -69,7 +69,7 @@
   border-radius: 100px;
 }
 
-.mapHeader .mapPost textarea{
+.pageHeader .post textarea{
   position: absolute;
   height: 70px;
   width: 75%;
@@ -89,7 +89,7 @@
   resize: none; /*remove the resize handle on the bottom right*/
 }
 
-.mapHeader ul {
+.pageHeader ul {
   position: absolute;
   left: 340px;
   top: 130px;
@@ -99,11 +99,11 @@
   overflow: hidden;
 }
 
-.mapHeader ul li:hover{
+.pageHeader ul li:hover{
   color: rgb(83, 143, 5);
 } 
 
-.mapHeader ul li {
+.pageHeader ul li {
   float: left; 
   display: block;
   color: rgb(110, 192, 2);
@@ -112,12 +112,12 @@
   text-decoration: none;
 } 
 
-.mapHeader .postBtn:hover{
+.pageHeader .postBtn:hover{
   background: rgb(102, 179, 2);
 
 }
 
-.mapHeader .postBtn{
+.pageHeader .postBtn{
   position: absolute;
   text-align:center;
   left: 95%;
@@ -131,7 +131,7 @@
   line-height: 3px;
 }
 
-.mapHeader .line{
+.pageHeader .line{
   position:relative;
   width: 1000px;
 }

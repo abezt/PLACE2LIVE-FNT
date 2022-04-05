@@ -1,13 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react/cjs/react.production.min';
+import { useEffect } from 'react/cjs/react.production.min';
 import './ca_styles.css';
 class NameForm extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
+          name: '',
           email: '',
-          psw: ''};
+          psw: '',
+          stID: ''};
   
       this.handleChange = this.handleInputChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,15 +27,15 @@ class NameForm extends React.Component {
     }
 
     handleSubmit(event) {
-      alert('Email: ' + this.state.email + "\nPassword: " + this.state.psw);
+      alert('Sign Up Requires Backend // Not Yet Implemented');
       event.preventDefault();
     }
 
     routeChange= () => {
       let navigate = useNavigate();
-      let path = '/map';
+      let path = '/';
       useEffect(() => {
-        navigate("/")
+        navigate(path)
       });
 
     }
@@ -47,12 +49,15 @@ class NameForm extends React.Component {
                         <h1><b>Sign Up</b></h1>
                         <p>Please fill in this form to create an account</p>
                         <hr />
+                        <label for="stID"><b>Name</b></label> 
+                        <input type="text" value={this.state.value} placeholder="Name" name="name"  onChange={this.handleChange} required/>
                         <label for="email"><b>Email</b></label>
                         <input type="text" value={this.state.email} placeholder="Enter Email" name="email" onChange={this.handleChange} required/>
                         <label for="psw"><b>Password</b></label> 
                         <input type="password" value={this.state.psw} placeholder="Enter Password" name="psw"  onChange={this.handleChange} required/>
-                        <label for="psw-rep"><b>Repeat Password</b></label> 
-                        <input type="password" value={this.state.value} placeholder="Repeat Password" name="psw-rep"  onChange={this.handleChange} required/>
+                        <label for="stID"><b>Student ID</b></label> 
+                        <input type="text" value={this.state.value} placeholder="Student ID" name="stID"  onChange={this.handleChange} required/>
+                        
                         <p>By creating an account you agree to our Terms and Service</p>
                         
                         <div class="clearfix">

@@ -100,10 +100,20 @@
 
   <script>
     let btn = document.querySelector("#btn");
+    let post = document.querySelector(".postBtn");
     let sidebar = document.querySelector(".sidebar");
-    let searchBtn = document.querySelector(".bx-search")
+    let searchBtn = document.querySelector(".bx-search");
+    let lgout = document.querySelector("#log_out");
 
     sidebar.classList.toggle("active");
+
+    lgout.onclick = function() {
+      alert("log out requires backend // backend not implemented yet");
+    }
+
+    post.onclick = function() {
+      alert("post requires backend // backend not implemented yet");
+    }
 
     btn.onclick = function() {
       sidebar.classList.toggle("active");
@@ -111,6 +121,10 @@
 
     searchBtn.onclick = function() {
       sidebar.classList.toggle("active");
+    }
+
+    lgout.onclick = function() {
+      alert("backend not implemented yet");
     }
   </script>
 

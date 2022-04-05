@@ -13,20 +13,20 @@
     },
     {
         "id": "2",
-        "name": "6 Bramblebush Close",
-        "lat": 51.206777,
-        "lng": -0.546255
+        "name": "150 University Ave W Unit 1a",
+        "lat": 43.458290,
+        "lng": -80.539580
     },
     {
         "id": "3",
-        "name": "22 Little Oakley",
-        "lat": 51.233130,
-        "lng": -0.592020
+        "name": "181 Lester St",
+        "lat": 43.474270,
+        "lng": -80.535050
     },
     {
         "id": "4",
-        "name": "14 GreenLeaf Avenue",
-        "lat": 51.232712,
-        "lng": -0.540188
+        "name": " 56 King St N",
+        "lat": 43.467030,
+        "lng": -80.522491
     }
 ]
