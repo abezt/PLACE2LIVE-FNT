@@ -1,4 +1,4 @@
-#PLACE2LIVE-FRONTEND
+# PLACE2LIVE-FRONTEND
 
 LINK TO BACKEND API: https://github.com/mraa022/PLACE2LIVE-API
 An all-in-one map-based web application that allows students in the Waterloo region to easily find a PLACE2LIVE, find another student to take over their available rooms, and find future roommates. To get started, users would upload a photo of their student ID and a quick selfie to confirm their identity and ensure the safety of other users, these photos will be discarded after verification. Our system will also identify what institution the user belongs to, to be displayed on their profile. After this simple step, the rest is up to the user to explore! From the main screen, they can choose a subpage based on what their needs are, looking for a place to stay, looking for other users to sublet out to, or looking for new roommates.
