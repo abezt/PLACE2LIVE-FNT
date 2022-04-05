@@ -12,10 +12,18 @@ PLACE2LIVE will have 3 main features, a Tenant Search portal, a Room Search port
 - Create Post (basic structure) (on backend)
 - Edit Post (on backend)
 - Delete Post (on backend)
-- Place Markers on Map (on frontend)
+- Placing Markers on Map When Units at Certain Address is added (on frontend)
 
 # **Components and Features that will be Implemented in the Future:**
 - Authenticating New Users with their Student ID and photos
+- Tags on each type of post, manual and automatic
+- User Profiles to see photos, reviews, or more information
+- Search Functionality, including searching by attributes
+- Notifications for Attributes the User is Interested in or New Profile Reviews
+- Dealing with Fake Reviews thorugh authentication and reporting posts
+
+_**Unfortunately, we were unable to connect the frontend and backend due to the time constraints, but the frontend and backend features are currently implemented standalone from one another.**_
+
 
 # **Dependencies**
 The frontend of PLACE2LIVE relies on the following dependencies:
@@ -30,4 +38,3 @@ The frontend of PLACE2LIVE relies on the following dependencies:
 - "react-scripts": "5.0.0"
 - "web-vitals": "^2.1.4"
 
-Unfortunately, we were unable to connect the frontend and backend due to the time constraints, but both the frontend and backend are implemented standalone from one another.
