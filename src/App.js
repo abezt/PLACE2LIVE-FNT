@@ -23,11 +23,33 @@ function App() {
             <Route path="/find-sublets" exact element={<FindRoommates />} />
             <Route path="/bookmarks" exact element={<Bookmarks />} />
             <Route path="/map" exact element=
-            {<div id="mapContainer">
+            {<section>
+              <div class="mapHeader">
+                  <div class="header">
+                    <p>Listings Map</p>
+                  </div>
+                  <div class="userPhoto">
+                    <img src="profile.jpg"/>
+                  </div>
+                  <div class="mapPost">
+                   <textarea name="paragraph_text" cols="50" rows="10" placeholder="make a new post..."></textarea>
+                  </div>
+                  <ul class="nav_list">
+                    <li><i class='bx bx-image' ></i></li>
+                    <li><i class='bx bxs-file-gif' ></i></li>
+                    <li><i class='bx bx-bar-chart-alt' ></i></li>  
+                    <li><i class='bx bx-smile' ></i></li>
+                    <li><i class='bx bx-calendar-alt' ></i></li>
+                  </ul>
+                  <button class="postBtn">Post</button>
+              </div>
+              <div id="mapContainer">
                 <div id="mapClipPath">
                   <Map />
                 </div>
-              </div>}/>
+              </div>
+
+              </section>}/>
             <Route path="/createaccount" exact element={<CreateAccount />} />
           </Routes>
         </header>

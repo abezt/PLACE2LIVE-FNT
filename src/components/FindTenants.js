@@ -4,8 +4,9 @@ function FindTenants() {
     return (
         <section>
             <div className="container-fluid" style={{left: "250px"}}>
-                <h1 className="mt-5">Welcome</h1>
-                <p>Find Tenants</p>
+                <h1 className="mt-5">Find Tenants</h1>
+                <p>Not Yet Implemented</p>
+                
                 <script>
                     
                 </script>

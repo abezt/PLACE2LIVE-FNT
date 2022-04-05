@@ -177,6 +177,10 @@ body {
     pointer-events:auto;
 }
 
+.sidebar .postBtn:hover{
+    background: green;
+}
+
 .sidebar .postBtn{
     opacity: 0;
     transition: all 0.5s ease;

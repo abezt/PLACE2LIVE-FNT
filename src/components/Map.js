@@ -13,45 +13,47 @@ function MapComponent() {
     const [selectedProperty, setSelectedProperty] = useState(null);
 
     return (
-        <div class="mapLoc">
-            <GoogleMap 
-                defaultZoom={12}
-                defaultCenter={{ lat: 43.4739, lng: -80.5274 }}
-            >
-                {properties.map(property => (
-                    <Marker 
-                        key={property.id} 
-                        position={{
-                            lat: property.lat, 
-                            lng: property.lng
-                        }}
-                        icon={{
-                            
-                            scaledSize: new window.google.maps.Size(25, 25)
-                        }}
-                        onClick ={() => {
-                            setSelectedProperty(property);
-                        }}
-                    />
-                ))}
+        <section>
+            <div class="mapLoc">
+                <GoogleMap 
+                    defaultZoom={12}
+                    defaultCenter={{ lat: 43.4739, lng: -80.5274 }}
+                >
+                    {properties.map(property => (
+                        <Marker 
+                            key={property.id} 
+                            position={{
+                                lat: property.lat, 
+                                lng: property.lng
+                            }}
+                            icon={{
+                                
+                                scaledSize: new window.google.maps.Size(25, 25)
+                            }}
+                            onClick ={() => {
+                                setSelectedProperty(property);
+                            }}
+                        />
+                    ))}
 
-                {selectedProperty && (
-                    <InfoWindow
-                        position={{
-                            lat: selectedProperty.lat, 
-                            lng: selectedProperty.lng
-                        }}
-                        onCloseClick={() => {
-                            setSelectedProperty(null);
-                        }}
-                    >
-                        <div>
-                            <h4 style={{color: "black"}}>{selectedProperty.name}</h4>
-                        </div>
-                    </InfoWindow>
-                )}
-            </GoogleMap>
-        </div>
+                    {selectedProperty && (
+                        <InfoWindow
+                            position={{
+                                lat: selectedProperty.lat, 
+                                lng: selectedProperty.lng
+                            }}
+                            onCloseClick={() => {
+                                setSelectedProperty(null);
+                            }}
+                        >
+                            <div>
+                                <h4 style={{color: "black"}}>{selectedProperty.name}</h4>
+                            </div>
+                        </InfoWindow>
+                    )}
+                </GoogleMap>
+            </div>
+        </section>
     )
 }
 

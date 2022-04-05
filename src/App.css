@@ -40,10 +40,93 @@
 }
 
 #mapClipPath {
-  height: 500px;
-  width: 80%;
+  height: 650px;
+  width: 86%;
   background-color: white;
   position: relative;
-  top: 250px;
+  top: 140px;
   left: 250px;
+}
+
+.mapHeader{
+  font-size:17px;
+}
+
+.mapHeader .header{
+  position:absolute;
+  left: 15%;
+  top: 15px;
+  font-style: italic;
+}
+
+.mapHeader img{
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: 15%;
+  top: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.mapHeader .mapPost textarea{
+  position: absolute;
+  height: 70px;
+  width: 75%;
+  left: 18%;
+  top: 60px;
+  background: white;
+  font-size: 16px;
+
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+}
+
+.mapHeader ul {
+  position: absolute;
+  left: 340px;
+  top: 130px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.mapHeader ul li:hover{
+  color: rgb(83, 143, 5);
+} 
+
+.mapHeader ul li {
+  float: left; 
+  display: block;
+  color: rgb(110, 192, 2);
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+} 
+
+.mapHeader .postBtn:hover{
+  background: rgb(102, 179, 2);
+
+}
+
+.mapHeader .postBtn{
+  position: absolute;
+  text-align:center;
+  left: 95%;
+  top: 120px;
+  border-radius: 50px;
+  opacity: 1;
+  font-size: 15px;
+  width: 70px;
+  height: 35px;
+  background: rgb(110, 192, 2);
+  line-height: 3px;
 }
