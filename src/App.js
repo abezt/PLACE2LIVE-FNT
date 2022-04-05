@@ -25,9 +25,12 @@ function App() {
             <Route path="/map" exact element=
             {<section>
               <div class="mapHeader">
+                
                   <div class="header">
-                    <p>Listings Map</p>
+                  <h>Listings Map</h>
+                  <hr />
                   </div>
+                  
                   <div class="userPhoto">
                     <img src="profile.jpg"/>
                   </div>

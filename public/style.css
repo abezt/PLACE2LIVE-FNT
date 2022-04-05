@@ -29,6 +29,10 @@ body {
     width: 240px;
 }
 
+.sidebar button{
+    background: rgb(110, 192, 2);
+}
+
 .sidebar .logo_content .logo{
     color: black;
     display: flex;
@@ -178,7 +182,7 @@ body {
 }
 
 .sidebar .postBtn:hover{
-    background: green;
+    background: rgb(87, 153, 1);;
 }
 
 .sidebar .postBtn{

@@ -130,3 +130,8 @@
   background: rgb(110, 192, 2);
   line-height: 3px;
 }
+
+.mapHeader .line{
+  position:relative;
+  width: 1000px;
+}
