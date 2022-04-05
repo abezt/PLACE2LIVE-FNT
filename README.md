@@ -5,14 +5,28 @@ An all-in-one map-based web application that allows students in the Waterloo reg
 
 PLACE2LIVE will have 3 main features, a Tenant Search portal, a Room Search portal, and a Roommate Search Portal. Automatically, posts in the Tenant Search portal, Room Search portal, and Roommate Search portal will get a “TenantNeeded”, “RoomNeeded”, “RoommateNeeded” tag, respectively. Users will also tag their own posts, for easy searchability, then those who want to search through the portals have the option to use the tags as filters.
 
-Components and Features that have been Implemented:
-Login to Account (on backend)
-Create Account (missing authentication) (on backend)
-Create Post (basic structure) (on backend)
-Edit Post (on backend)
-Delete Post (on backend)
-Place Markers on Map (on frontend)
-Components and Features that will be Implemented in the Future:
-Authenticating New Users with their Student ID and photos
+# **Components and Features that have been Implemented:**
+- Login to Account (on backend)
+- Create Account (missing authentication) (on backend)
+- Create Post (basic structure) (on backend)
+- Edit Post (on backend)
+- Delete Post (on backend)
+- Place Markers on Map (on frontend)
+
+# **Components and Features that will be Implemented in the Future:**
+- Authenticating New Users with their Student ID and photos
+
+# **Dependencies**
+The frontend of PLACE2LIVE relies on the following dependencies:
+- "@testing-library/jest-dom": "^5.16.2"
+- "@testing-library/react": "^12.1.3"
+- "@testing-library/user-event": "^13.5.0"
+- "minimist": "^1.2.6"
+- "react": "^16.13.0"
+- "react-dom": "^16.13.0"
+- "react-google-maps": "^9.4.5"
+- "react-router-dom": "^6.2.2"
+- "react-scripts": "5.0.0"
+- "web-vitals": "^2.1.4"
 
 Unfortunately, we were unable to connect the frontend and backend due to the time constraints, but both the frontend and backend are implemented standalone from one another.
