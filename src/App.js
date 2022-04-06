@@ -6,8 +6,8 @@ import FindTenants from './components/FindTenants.js';
 import FindSublets from './components/FindSublets.js';
 import FindRoommates from './components/FindRoommates.js';
 import Bookmarks from './components/Bookmarks.js';
-import CreateAccount from './components/CreateAccount';
 import Map from './components/Map.js';
+import CreateAccount from './components/CreateAccount';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
             <section>
               <div class="pageHeader">
                   <div class="header">
-                  <h>Home</h>
-                  <hr />
+                    <h>Home</h>
+                    <hr />
                   </div>
                   <div class="userPhoto">
                     <img src="profile.jpg" alt=""/>
@@ -38,7 +38,10 @@ function App() {
                   </ul>
                   <button class="postBtn">Post</button>
               </div>
-              <Home />
+              <div class="homePage">
+                <Home />
+              </div>
+             
             </section>} />
             <Route path="/find-tenants" exact element={
             <section>
@@ -62,7 +65,7 @@ function App() {
                   </ul>
                   <button class="postBtn">Post</button>
               </div>
-              <FindTenants />
+              <div class="pages"><FindTenants /></div>
             </section>} />
             <Route path="/find-roommates" exact element={            
             <section>
@@ -86,7 +89,7 @@ function App() {
                   </ul>
                   <button class="postBtn">Post</button>
               </div>
-              <FindRoommates />
+              <div class="pages"><FindRoommates /></div>
             </section>} />
             <Route path="/find-sublets" exact element={   
             <section>
@@ -110,7 +113,7 @@ function App() {
                   </ul>
                   <button class="postBtn">Post</button>
               </div>
-              <FindSublets />
+              <div class="pages"><FindSublets /></div>
             </section>} />
             <Route path="/bookmarks" exact element={
             <section>
@@ -120,7 +123,7 @@ function App() {
                   <hr />
                 </div>
               </div>
-                  <Bookmarks />
+              <div class="pages"><Bookmarks /></div>
             </section>} />
             <Route path="/map" exact element=
             {<section>
